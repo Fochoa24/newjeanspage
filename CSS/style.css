@@ -1,0 +1,344 @@
+/* Estilos generales */
+
+/* Estilos para pantallas grandes */
+@media screen and (min-width: 768px) {
+}
+
+/* Estilos para pantallas medianas */
+@media screen and (max-width: 767px) {
+}
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media screen and (max-width: 480px) {
+}
+
+/* Reglas generales */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  h1, h2, h3 {
+    text-align: center;
+    color: #ff6600;
+  }
+  
+  p {
+    font-size: 16px;
+    line-height: 1.5;
+  }
+  
+  ul, ol {
+    list-style: none;
+    padding: 0;
+  }
+
+  /* Estilo para la breve descripcion del grupo */
+  
+.elegant-paragraph {
+  text-align: center;
+}
+  
+ /* Estilos para la sección Members */
+.members-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f9f9f9; /* Fondo gris claro */
+    overflow: hidden; /* Ocultar contenido que desborde del contenedor */
+  }
+  
+  .members-title {
+    font-size: 24px;
+    color: #ff6600; /* Color de título naranja */
+    margin-bottom: 20px;
+  }
+  
+  .members-list li {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: black; /* Color de texto negro */
+    font-weight: bold;
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+  }
+  
+  .members-list li:hover {
+    transform: scale(1.05); /* Reducir el valor para reducir el efecto de elevación */
+    opacity: 1;
+    color: #ff6600;
+  }
+  
+  
+ /* Estilos para la sección History */
+.history-section {
+    text-align: center;
+    padding: 20px;
+    background-color: #f2f2f2; /* Fondo gris claro */
+    overflow: hidden; /* Ocultar contenido que desborde del contenedor */
+  }
+  
+  .history-title {
+    font-size: 24px;
+    color: #ff6600; /* Color de título naranja */
+    margin-bottom: 20px;
+  }
+  
+  .history-paragraph {
+    font-size: 16px;
+    color: black; /* Color de texto gris */
+    line-height: 1.5;
+    margin-bottom: 20px;
+    opacity: 0.8;
+    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
+    word-wrap: break-word; /* Romper palabras largas para que quepan dentro del contenedor */
+  }
+  
+  .history-paragraph:hover {
+    transform: scale(1.05); /* Reducir el valor para reducir el efecto de elevación */
+    opacity: 1;
+    color: #ff6600;
+  }
+  
+
+  
+/* Estilos para el Navbar */
+.navbar {
+  background-color: transparent; /* Fondo transparente */
+  padding: 10px 0;
+  text-align: center;
+  width: 100%; /* Ancho máximo */
+  max-width: 1200px; /* Ancho máximo deseado */
+  margin: 0 auto; /* Centrar horizontalmente */
+  transition: background-color 0.3s ease; /* Transición de color de fondo */
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #333; /* Color de texto gris oscuro */
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transición de color de fondo y texto */
+}
+
+.navbar a:hover {
+  background-color: #333; /* Fondo gris oscuro en hover */
+  color: #fff; /* Color de texto blanco en hover */
+}
+
+/* Agregar un efecto de transición suave en hover */
+.navbar a:hover {
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05); /* Efecto de escala en hover */
+}
+
+
+/* ESTILO PARA LA PÁGINA "MEMBERS" */
+
+.members-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo gris claro */
+  overflow: hidden; /* Ocultar contenido que desborde del contenedor */
+}
+
+.members-title {
+  font-size: 24px;
+  color: #333; /* Color de título negro */
+  margin-bottom: 20px;
+}
+
+.members-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias filas */
+  justify-content: center;
+}
+
+.members-list li {
+  width: 200px; /* Ancho de cada elemento */
+  margin: 10px; /* Espacio entre elementos */
+  text-align: left;
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de transformación y sombra al pasar el cursor */
+}
+
+.members-list li:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el cursor */
+}
+
+.members-list img {
+  max-width: 100%; /* Evitar que las imágenes se desborden del contenedor */
+  height: auto;
+  border-radius: 50%; /* Hacer que las imágenes sean redondas */
+}
+
+/* Estilo para la imagen */
+.logo {
+  text-align: center;
+}
+
+
+/* ESTILO PARA LA PÁGINA "HISTORY" */
+
+/* Estilo para el logo */
+
+h1, h2, h3 {
+  text-align: center;
+  color: #ff6600;
+}
+
+/* Estilos para la sección History */
+.history-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9; /* Fondo gris claro */
+}
+
+.history-title {
+  font-size: 28px;
+  color: #333; /* Color de título negro */
+  margin-bottom: 20px;
+}
+
+/* Estilos para eventos históricos */
+details {
+  margin: 10px 0;
+  background-color: #fff; /* Fondo blanco */
+  border: 1px solid #ddd; /* Borde gris claro */
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de transformación y sombra al pasar el cursor */
+  cursor: pointer;
+}
+
+details:hover {
+  transform: scale(1.05); /* Efecto de escala al pasar el cursor */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el cursor */
+}
+
+summary {
+  font-weight: bold;
+  color: #ff6600; /* Color de título naranja llamativo */
+  cursor: pointer;
+  transition: color 0.3s ease; /* Transición de color al pasar el cursor */
+}
+
+details:hover summary {
+  color: #ff3300; /* Cambiar el color al naranja más intenso al pasar el cursor */
+}
+
+/* Estilos para el contenido de los eventos históricos */
+p {
+  font-size: 16px;
+  color: #666; /* Color de texto gris */
+  line-height: 1.5;
+  opacity: 0.8;
+}
+
+details[open] p {
+  color: #333; /* Cambiar el color del texto al negro cuando está abierto */
+}
+
+
+/* Estilo para el footer */
+footer {
+  background-color: #333; /* Fondo gris oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px;
+  text-align: center;
+  clear: both; /* Limpiar flotadores */
+}
+
+footer a {
+  text-decoration: none;
+  color: #ff6600; /* Color de enlace naranja */
+  transition: color 0.3s ease; /* Transición de color al pasar el cursor */
+}
+
+footer a:hover {
+  color: #ff3300; /* Cambiar el color del enlace al naranja más intenso al pasar el cursor */
+}
+
+/* Estilo para el contenido dentro del footer */
+footer div {
+  width: 33.33%;
+  float: left;
+  padding: 0 20px; /* Agregar espacio en los lados para separar los elementos */
+  box-sizing: border-box; /* Incluir el padding en el ancho total */
+}
+
+footer h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+footer p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer li {
+  margin-bottom: 5px;
+  font-size: 18px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para Stage */
+
+/* Aplicar flexbox para organizar el contenido */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+/* Estilo para el enlace que actúa como título */
+.video-link {
+  font-size: 24px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333; /* Cambia el color a tu preferencia */
+  margin-bottom: 10px; /* Espacio entre el título y el video */
+}
+
+/* Estilo para el iframe del video */
+iframe {
+  width: 560px; /* Ancho del video (ajusta según tus necesidades) */
+  height: 315px; /* Alto del video (ajusta según tus necesidades) */
+  border: 0;
+}
+
+
+
+
