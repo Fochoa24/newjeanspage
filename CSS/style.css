@@ -338,7 +338,6 @@ iframe {
 }
 
 /* Estilo para la pagina Discography */
-
 .album-list {
   text-align: center; /* Centra el contenido horizontalmente */
 }
@@ -347,11 +346,18 @@ iframe {
   display: inline-block; /* Permite que los elementos se muestren en línea y se centren horizontalmente */
   text-align: left; /* Restablece la alineación del texto a la izquierda dentro de cada elemento */
   margin: 10px; /* Añade un espacio entre los elementos */
+  transition: transform 0.3s; /* Agrega una transición suave al efecto de escala */
 }
 
 .album-list img {
   display: block; /* Evita que las imágenes afecten la alineación del texto */
   margin: 0 auto; /* Centra las imágenes horizontalmente */
+  width: 200px; /* Establece el ancho deseado para ambas imágenes */
+  height: auto; /* Mantén la proporción de aspecto original */
+}
+
+.album-list li:hover {
+  transform: scale(1.05); /* Escala ligeramente el elemento al pasar el cursor sobre él */
 }
 
 
