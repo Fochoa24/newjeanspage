@@ -194,8 +194,6 @@ body {
 }
 
 
-/* ESTILO PARA LA PÁGINA "HISTORY" */
-
 /* Estilo para el logo */
 
 h1, h2, h3 {
@@ -337,6 +335,23 @@ iframe {
   width: 560px; /* Ancho del video (ajusta según tus necesidades) */
   height: 315px; /* Alto del video (ajusta según tus necesidades) */
   border: 0;
+}
+
+/* Estilo para la pagina Discography */
+
+.album-list {
+  text-align: center; /* Centra el contenido horizontalmente */
+}
+
+.album-list li {
+  display: inline-block; /* Permite que los elementos se muestren en línea y se centren horizontalmente */
+  text-align: left; /* Restablece la alineación del texto a la izquierda dentro de cada elemento */
+  margin: 10px; /* Añade un espacio entre los elementos */
+}
+
+.album-list img {
+  display: block; /* Evita que las imágenes afecten la alineación del texto */
+  margin: 0 auto; /* Centra las imágenes horizontalmente */
 }
 
 
