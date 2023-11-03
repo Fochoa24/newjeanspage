@@ -1,178 +1,74 @@
 
 /* Reglas generales */
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  h1, h2, h3 {
-    text-align: center;
-    color: #ff6600;
-  }
-  
-  p {
-    font-size: 16px;
-    line-height: 1.5;
-  }
-  
-  ul, ol {
-    list-style: none;
-    padding: 0;
-  }
-
-  /* Estilo para la breve descripcion del grupo */
-  
-.elegant-paragraph {
-  text-align: center;
-}
-  
- /* Estilos para la sección Members */
-.members-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #f9f9f9; /* Fondo gris claro */
-    overflow: hidden; /* Ocultar contenido que desborde del contenedor */
-  }
-  
-  .members-title {
-    font-size: 24px;
-    color: #ff6600; /* Color de título naranja */
-    margin-bottom: 20px;
-  }
-  
-  .members-list li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    color: black; /* Color de texto negro */
-    font-weight: bold;
-    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
-  }
-  
-  .members-list li:hover {
-    transform: scale(1.05); /* Reducir el valor para reducir el efecto de elevación */
-    opacity: 1;
-    color: #ff6600;
-  }
-  
-  
- /* Estilos para la sección History */
-.history-section {
-    text-align: center;
-    padding: 20px;
-    background-color: #f2f2f2; /* Fondo gris claro */
-    overflow: hidden; /* Ocultar contenido que desborde del contenedor */
-  }
-  
-  .history-title {
-    font-size: 24px;
-    color: #ff6600; /* Color de título naranja */
-    margin-bottom: 20px;
-  }
-  
-  .history-paragraph {
-    font-size: 16px;
-    color: black; /* Color de texto gris */
-    line-height: 1.5;
-    margin-bottom: 20px;
-    opacity: 0.8;
-    transition: transform 0.2s ease, opacity 0.2s ease, color 0.2s ease;
-    word-wrap: break-word; /* Romper palabras largas para que quepan dentro del contenedor */
-  }
-  
-  .history-paragraph:hover {
-    transform: scale(1.05); /* Reducir el valor para reducir el efecto de elevación */
-    opacity: 1;
-    color: #ff6600;
-  }
-  
-
-  
-/* Estilos para el Navbar */
-.navbar {
-  background-color: transparent; /* Fondo transparente */
-  padding: 10px 0;
-  text-align: center;
-  width: 100%; /* Ancho máximo */
-  max-width: 1200px; /* Ancho máximo deseado */
-  margin: 0 auto; /* Centrar horizontalmente */
-  transition: background-color 0.3s ease; /* Transición de color de fondo */
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
 }
 
-.navbar ul {
+h1, h2, h3 {
+  text-align: center;
+  color: #ff6600;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul, ol {
   list-style: none;
-  margin: 0;
   padding: 0;
 }
 
-.navbar li {
-  display: inline;
-  margin-right: 20px;
+/* Estilo para la breve descripción del grupo */
+.elegant-paragraph {
+  text-align: center;
 }
 
-.navbar a {
-  text-decoration: none;
-  color: #333; /* Color de texto gris oscuro */
-  font-size: 18px;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transición de color de fondo y texto */
-}
-
-.navbar a:hover {
-  background-color: #333; /* Fondo gris oscuro en hover */
-  color: #fff; /* Color de texto blanco en hover */
-}
-
-/* Agregar un efecto de transición suave en hover */
-.navbar a:hover {
-  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-  transform: scale(1.05); /* Efecto de escala en hover */
-}
-
-
-/* ESTILO PARA LA PÁGINA "MEMBERS" */
-
+/* Estilos para la sección Members */
 .members-section {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9; /* Fondo gris claro */
-  overflow: hidden; /* Ocultar contenido que desborde del contenedor */
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
 
 .members-title {
   font-size: 24px;
-  color: #333; /* Color de título negro */
+  color: #ff6600;
   margin-bottom: 20px;
 }
 
 .members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   list-style: none;
   padding: 0;
-  display: flex;
-  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en varias filas */
-  justify-content: center;
 }
 
 .members-list li {
-  width: 200px; /* Ancho de cada elemento */
-  margin: 10px; /* Espacio entre elementos */
+  width: 200px;
+  margin: 10px;
   text-align: left;
-  background-color: #fff; /* Fondo blanco */
-  border: 1px solid #ddd; /* Borde gris claro */
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 10px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de transformación y sombra al pasar el cursor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  color: #333;
 }
 
 .members-list li:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el cursor */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el cursor */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 .members-list img {
-  max-width: 100%; /* Evitar que las imágenes se desborden del contenedor */
+  max-width: 100%;
   height: auto;
-  border-radius: 50%; /* Hacer que las imágenes sean redondas */
+  border-radius: 50%;
 }
 
 /* Estilo para la imagen */
@@ -180,173 +76,173 @@ body {
   text-align: center;
 }
 
-
-/* Estilo para el logo */
-
-h1, h2, h3 {
+/* Estilo para el Navbar */
+.navbar {
+  background-color: transparent;
+  padding: 10px 0;
   text-align: center;
-  color: #ff6600;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+}
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.navbar li {
+  display: inline;
+  margin-right: 20px;
+}
+.navbar a {
+  text-decoration: none;
+  color: #333;
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.navbar a:hover {
+  background-color: #333;
+  color: #fff;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  transform: scale(1.05);
 }
 
-/* Estilos para la sección History */
+/* Estilo para la sección History */
 .history-section {
   text-align: center;
   padding: 20px;
-  background-color: #f9f9f9; /* Fondo gris claro */
+  background-color: #f9f9f9;
+  overflow: hidden;
 }
 
 .history-title {
   font-size: 28px;
-  color: #333; /* Color de título negro */
+  color: #333;
   margin-bottom: 20px;
 }
 
 /* Estilos para eventos históricos */
 details {
   margin: 10px 0;
-  background-color: #fff; /* Fondo blanco */
-  border: 1px solid #ddd; /* Borde gris claro */
+  background-color: #fff;
+  border: 1px solid #ddd;
   padding: 20px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición de transformación y sombra al pasar el cursor */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   cursor: pointer;
 }
-
 details:hover {
-  transform: scale(1.05); /* Efecto de escala al pasar el cursor */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra suave al pasar el cursor */
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
-
-summary {
+details summary {
   font-weight: bold;
-  color: #ff6600; /* Color de título naranja llamativo */
+  color: #ff6600;
   cursor: pointer;
-  transition: color 0.3s ease; /* Transición de color al pasar el cursor */
+  transition: color 0.3s ease;
 }
-
-details:hover summary {
-  color: #ff3300; /* Cambiar el color al naranja más intenso al pasar el cursor */
+details summary:hover {
+  color: #ff3300;
 }
-
-/* Estilos para el contenido de los eventos históricos */
-p {
+details p {
   font-size: 16px;
-  color: #666; /* Color de texto gris */
+  color: #666;
   line-height: 1.5;
   opacity: 0.8;
 }
-
 details[open] p {
-  color: #333; /* Cambiar el color del texto al negro cuando está abierto */
+  color: #333;
 }
-
 
 /* Estilo para el footer */
 footer {
-  background-color: #333; /* Fondo gris oscuro */
-  color: #fff; /* Texto blanco */
+  background-color: #333;
+  color: #fff;
   padding: 20px;
   text-align: center;
-  clear: both; /* Limpiar flotadores */
+  clear: both;
 }
-
 footer a {
   text-decoration: none;
-  color: #ff6600; /* Color de enlace naranja */
-  transition: color 0.3s ease; /* Transición de color al pasar el cursor */
+  color: #ff6600;
+  transition: color 0.3s ease;
 }
-
 footer a:hover {
-  color: #ff3300; /* Cambiar el color del enlace al naranja más intenso al pasar el cursor */
+  color: #ff3300;
+  text-decoration: underline;
 }
-
-/* Estilo para el contenido dentro del footer */
 footer div {
   width: 33.33%;
   float: left;
-  padding: 0 20px; /* Agregar espacio en los lados para separar los elementos */
-  box-sizing: border-box; /* Incluir el padding en el ancho total */
+  padding: 0 20px;
+  box-sizing: border-box;
 }
-
-footer h3 {
+footer div h3 {
   font-size: 24px;
   margin-bottom: 10px;
 }
-
-footer p {
+footer div p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 20px;
 }
-
-footer ul {
+footer div ul {
   list-style: none;
   padding: 0;
 }
-
-footer li {
+footer div ul li {
   margin-bottom: 5px;
   font-size: 18px;
 }
-
-footer a {
+footer div ul li a {
   text-decoration: none;
   color: #fff;
   transition: color 0.3s ease;
 }
-
-footer a:hover {
+footer div ul li a:hover {
   text-decoration: underline;
 }
 
 /* Estilos para Stage */
-
-/* Aplicar flexbox para organizar el contenido */
 .video-section {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
 }
-
-/* Estilo para el enlace que actúa como título */
-.video-link {
+.video-section .video-link {
   font-size: 24px;
   font-weight: bold;
   text-decoration: none;
-  color: #333; /* Cambia el color a tu preferencia */
-  margin-bottom: 10px; /* Espacio entre el título y el video */
+  color: #333;
+  margin-bottom: 10px;
 }
-
-/* Estilo para el iframe del video */
-iframe {
-  width: 560px; /* Ancho del video (ajusta según tus necesidades) */
-  height: 315px; /* Alto del video (ajusta según tus necesidades) */
+.video-section iframe {
+  width: 560px;
+  height: 315px;
   border: 0;
 }
 
-/* Estilo para la pagina Discography */
+/* Estilo para la página Discography */
 .album-list {
-  text-align: center; /* Centra el contenido horizontalmente */
+  text-align: center;
 }
-
 .album-list li {
-  display: inline-block; /* Permite que los elementos se muestren en línea y se centren horizontalmente */
-  text-align: left; /* Restablece la alineación del texto a la izquierda dentro de cada elemento */
-  margin: 10px; /* Añade un espacio entre los elementos */
-  transition: transform 0.3s; /* Agrega una transición suave al efecto de escala */
+  display: inline-block;
+  text-align: left;
+  margin: 10px;
+  transition: transform 0.3s;
 }
-
-.album-list img {
-  display: block; /* Evita que las imágenes afecten la alineación del texto */
-  margin: 0 auto; /* Centra las imágenes horizontalmente */
-  width: 200px; /* Establece el ancho deseado para ambas imágenes */
-  height: auto; /* Mantén la proporción de aspecto original */
+.album-list li img {
+  display: block;
+  margin: 0 auto;
+  width: 200px;
+  height: auto;
 }
-
 .album-list li:hover {
-  transform: scale(1.05); /* Escala ligeramente el elemento al pasar el cursor sobre él */
+  transform: scale(1.05);
 }
 
-
-
-
+/*# sourceMappingURL=style.css.map */

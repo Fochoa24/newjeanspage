@@ -1,0 +1,275 @@
+/* Variables */
+$orange: #ff6600;
+$lightGray: #f2f2f2;
+$darkGray: #333;
+$white: #fff;
+$lighterGray: #f9f9f9;
+
+/* Reglas generales */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: $lightGray;
+  color: $darkGray;
+}
+
+h1, h2, h3 {
+  text-align: center;
+  color: $orange;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+ul, ol {
+  list-style: none;
+  padding: 0;
+}
+
+/* Estilo para la breve descripción del grupo */
+.elegant-paragraph {
+  text-align: center;
+}
+
+/* Estilos para la sección Members */
+.members-section {
+  text-align: center;
+  padding: 20px;
+  background-color: $lighterGray;
+  overflow: hidden;
+}
+
+.members-title {
+  font-size: 24px;
+  color: $orange;
+  margin-bottom: 20px;
+}
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.members-list li {
+  width: 200px;
+  margin: 10px;
+  text-align: left;
+  background-color: $white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  font-weight: bold;
+  color: $darkGray;
+}
+
+.members-list li:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.members-list img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+/* Estilo para la imagen */
+.logo {
+  text-align: center;
+}
+
+/* Estilo para el Navbar */
+.navbar {
+  background-color: transparent;
+  padding: 10px 0;
+  text-align: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  transition: background-color 0.3s ease;
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    display: inline;
+    margin-right: 20px;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $darkGray;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    
+    &:hover {
+      background-color: $darkGray;
+      color: $white;
+      transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+      transform: scale(1.05);
+    }
+  }
+}
+
+/* Estilo para la sección History */
+.history-section {
+  text-align: center;
+  padding: 20px;
+  background-color: $lighterGray;
+  overflow: hidden;
+}
+
+.history-title {
+  font-size: 28px;
+  color: $darkGray;
+  margin-bottom: 20px;
+}
+
+/* Estilos para eventos históricos */
+details {
+  margin: 10px 0;
+  background-color: $white;
+  border: 1px solid #ddd;
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  summary {
+    font-weight: bold;
+    color: $orange;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: #ff3300;
+    }
+  }
+
+  p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.5;
+    opacity: 0.8;
+  }
+
+  &[open] p {
+    color: $darkGray;
+  }
+}
+
+/* Estilo para el footer */
+footer {
+  background-color: $darkGray;
+  color: $white;
+  padding: 20px;
+  text-align: center;
+  clear: both;
+  
+  a {
+    text-decoration: none;
+    color: $orange;
+    transition: color 0.3s ease;
+  
+    &:hover {
+      color: #ff3300;
+      text-decoration: underline;
+    }
+  }
+  
+  div {
+    width: 33.33%;
+    float: left;
+    padding: 0 20px;
+    box-sizing: border-box;
+    
+    h3 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+    
+    p {
+      font-size: 16px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    ul {
+      list-style: none;
+      padding: 0;
+      
+      li {
+        margin-bottom: 5px;
+        font-size: 18px;
+        
+        a {
+          text-decoration: none;
+          color: $white;
+          transition: color 0.3s ease;
+          
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}
+
+/* Estilos para Stage */
+.video-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  
+  .video-link {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: $darkGray;
+    margin-bottom: 10px;
+  }
+  
+  iframe {
+    width: 560px;
+    height: 315px;
+    border: 0;
+  }
+}
+
+/* Estilo para la página Discography */
+.album-list {
+  text-align: center;
+  
+  li {
+    display: inline-block;
+    text-align: left;
+    margin: 10px;
+    transition: transform 0.3s;
+    
+    img {
+      display: block;
+      margin: 0 auto;
+      width: 200px;
+      height: auto;
+    }
+    
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+}
