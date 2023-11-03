@@ -130,7 +130,7 @@ ul, ol {
 
 .history-title {
   font-size: 28px;
-  color: $darkGray;
+  color: #ff3300;
   margin-bottom: 20px;
 }
 
@@ -276,12 +276,66 @@ footer {
 
 /* Estilo para discography en index */
 
- .albums-images {
-    width: 200px;
-    height: auto;
-    margin-right: 10px;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+}
 
-    &:hover {
-        transform: scale(1.05);
-    }
- }
+/* Estilos de la sección "Discography" */
+.discography-title {
+  font-size: 28px;
+  color: #ff3300;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.albums-images {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.albums-images li {
+  width: 250px;
+  margin: 20px;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+  position: relative;
+}
+
+.albums-images li:hover {
+  transform: scale(1.05);
+}
+
+.albums-images img {
+  max-width: 100%;
+  border-radius: 5px;
+}
+
+/* Estilos de la lista de canciones */
+.song-list {
+  list-style: none;
+  padding: 0;
+  text-align: left;
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px;
+  border-radius: 0 0 5px 5px;
+}
+
+.song-list li {
+  margin: 5px 0;
+  font-weight: bold;
+}
+
+
