@@ -273,3 +273,15 @@ footer {
     }
   }
 }
+
+/* Estilo para discography en index */
+
+ .albums-images {
+    width: 200px;
+    height: auto;
+    margin-right: 10px;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+ }
