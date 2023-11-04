@@ -333,3 +333,20 @@ footer {
 .song-list li:hover {
   color: #333; /* Color del texto al pasar el ratón */
 }
+
+
+
+/* Estilos para pantallas pequeñas (teléfonos) */
+@media screen and (max-width: 576px) {
+  /* Ajustes para pantallas pequeñas */
+}
+
+/* Estilos para pantallas medianas (tabletas) */
+@media screen and (min-width: 577px) and (max-width: 992px) {
+  /* Ajustes para pantallas medianas */
+}
+
+/* Estilos para pantallas grandes (computadoras de escritorio) */
+@media screen and (min-width: 993px) {
+  /* Ajustes para pantallas grandes */
+}
